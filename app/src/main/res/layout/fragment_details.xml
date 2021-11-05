@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/buttonFavourite"
+        android:layout_width="123dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/corazon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonReading"
+        android:layout_width="125dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#FFFFFFFF"
+        android:src="@drawable/libro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonToRead"
+        android:layout_width="130dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/reloj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/portadaDetails"
+        android:layout_width="147dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titutloGrande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="211dp"
+        android:text="TituloGrande"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloPequeño"
+        android:layout_width="196dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="Titulo:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/portadaDetails"
+        app:layout_constraintTop_toBottomOf="@+id/titutloGrande" />
+
+    <TextView
+        android:id="@+id/autorDetails"
+        android:layout_width="194dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Autor:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/portadaDetails"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPequeño" />
+
+    <TextView
+        android:id="@+id/publicationYear"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Año de publicación:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/portadaDetails"
+        app:layout_constraintTop_toBottomOf="@+id/autorDetails" />
+
+    <TextView
+        android:id="@+id/numRating"
+        android:layout_width="188dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="numRaings:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/portadaDetails"
+        app:layout_constraintTop_toBottomOf="@+id/publicationYear" />
+</androidx.constraintlayout.widget.ConstraintLayout>
